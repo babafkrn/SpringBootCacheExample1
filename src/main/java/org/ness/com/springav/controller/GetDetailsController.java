@@ -54,7 +54,6 @@ public class GetDetailsController {
 	
 	@GetMapping("/clear-products-cache")
 	public void evictSingleCacheValue(@RequestParam("name") String cacheName) {
-		
 		System.out.println("evictSingleCacheValue method invoked: " + cacheName);
 		
 		cachingService.evictSingleCacheValue(cacheName);
